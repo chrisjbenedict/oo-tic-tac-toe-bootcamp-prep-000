@@ -93,8 +93,8 @@ class TicTacToe
       if token = "X" || token = "O"
         true
       end
+      false
     end
-    false
   end
 
 end
