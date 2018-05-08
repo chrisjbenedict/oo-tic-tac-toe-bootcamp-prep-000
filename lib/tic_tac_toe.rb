@@ -117,7 +117,6 @@ class TicTacToe
       turn
       over?
       play
-      turn
     end
     if won?
       puts "Congratulations #{winner}!"
