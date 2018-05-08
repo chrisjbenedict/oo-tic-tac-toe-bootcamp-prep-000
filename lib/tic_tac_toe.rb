@@ -67,5 +67,5 @@ class TicTacToe
     end
     turns
   end
-  
+
 end
