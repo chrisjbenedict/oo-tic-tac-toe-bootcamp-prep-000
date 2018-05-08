@@ -92,7 +92,7 @@ class TicTacToe
     @board.all? do |token|
       if token = "X" || token = "O"
         true
-      elsif token = " "
+      elsif turn_count != 9
         false
       end
     end
