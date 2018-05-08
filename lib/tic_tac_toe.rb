@@ -92,6 +92,8 @@ class TicTacToe
     @board.all? do |token|
       if token = "X" || token = "O"
         true
+      else
+        false
       end
     end
   end
