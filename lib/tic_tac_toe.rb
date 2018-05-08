@@ -14,7 +14,7 @@ class TicTacToe
   [6,4,2]
 ]
 
-  def display_board(board)
+  def display_board
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
     puts "-----------"
     puts " #{board[3]} | #{board[4]} | #{board[5]} "
@@ -52,10 +52,11 @@ class TicTacToe
     index = input_to_index(user_input)
     if valid_move?(index)
       move(index, token)
-      display_board
+      token = current_player
     else
       turn
     end
+    display_board
   end
 
 
