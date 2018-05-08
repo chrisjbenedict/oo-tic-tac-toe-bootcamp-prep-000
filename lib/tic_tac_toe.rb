@@ -89,11 +89,10 @@ class TicTacToe
   end
 
   def full?
-    @board.all? do |token|
-      if token = "X" || token = "O"
-        true
+    @board.any? do |token|
+      if token = " "
+        false
       end
-      false
     end
   end
 
