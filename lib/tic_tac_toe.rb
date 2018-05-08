@@ -116,6 +116,7 @@ class TicTacToe
     if !over?
       turn
       over?
+      won?
     end
     if won?
       puts "Congratulations #{winner}!"
