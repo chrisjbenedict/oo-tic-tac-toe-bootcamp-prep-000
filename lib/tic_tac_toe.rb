@@ -92,7 +92,7 @@ class TicTacToe
     @board.all? do |token|
       if token = "X" || token = "O"
         true
-      else
+      elsif token = " "
         false
       end
     end
